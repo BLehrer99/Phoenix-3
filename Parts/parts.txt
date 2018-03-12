@@ -1,0 +1,41 @@
+AMAZON.com below
+//KNACRO GY-89 10DOF LSM303D + L3GD20 + BMP180 barometric pressure sensor module Three-axis gyroscope + triaxial accelerometer + three-axis magnetic field + pressure
+//Zeee 11.1V 30C 2200mAh Lipo RC Rechargeable Battery for RC Helicopter/Airplane/Car/Truck/Boat, RC Hobby
+//E-flite Power 15 Brushless Outrunner Motor 950Kv
+//E-flite Plastic Folding Propeller Blades 12 x 8
+//uxcell RC Remote Control Airplane Folding Prop Propeller Spinner D32xH28mm Black
+//EMAX Formula32 45A (Upgrand BLHeli_32) ESC 2-5S DSHOT 1200 MULTISHOT ONESHOT125 ONESHOT42 Electronic Speed Control for FPV Racing Drone Quadcopter by Crazepony
+//uxcell 3mm to 5mm Inner Dia Rotatable Universal Steering Shaft U Joint Coupler
+//Davis Instruments Chart Holder Tube (40 x 3-Inch)
+//OSOYOO DUE R3 32 Bit ARM Compatible Shield Module Board With USB Cable for Arduino
+//kuman K15 Ethernet Shield W5100 Micro-sd Card Slot for Arduino 2009 UNO Mega 1280 Mega 2560 Nano Duemilanove
+//SunFounder 2 Channel DC 5V Relay Module with Optocoupler Low Level Trigger Expansion Board for Arduino UNO R3 MEGA 2560 1280 DSP ARM PIC AVR STM32 Raspberry Pi
+
+--------------------
+
+//x2 wood disks for pressure, 3 inch diameter big, 1.4 inch small
+//x4 model rocket fins for roll comp
+//x4 wood iso triangle landing legs, 2.12 inch base, 6.09 inch edge
+//x4 ^^ but out of steel for heat shield
+//x4 fiberglass cloth heat hinges
+//x3 per launch E12-4 engines
+//x3 per launch E12-4 igniters and plugs
+//pushrods
+//lots of servos
+//relay for ignition
+//x2 9 volt battery for ignition, series
+//switch for abort
+//30 inch body, 3 inch diameter
+//6 inch round fairing plus cone
+//ethernet/sd shield for data
+//1 gig micro sd card for data
+//lots of wiring
+//parachute for fairing
+//foam plug for fairing jettison, half marshmallow & connection stick
+//hinged body segment
+//lots of control horns and clevis's
+//engine mount x2 & engine box
+//hot glue
+//silicone, heat
+//coathanger, for pushrods
+//svg for motor mount

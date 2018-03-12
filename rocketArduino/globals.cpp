@@ -19,6 +19,8 @@ int phase = 0;
 String message; //stores important info to write to sd card
 int countdownStart;
 
+String input = "";
+
 int tTime;
 
 Telemetry telemetry;

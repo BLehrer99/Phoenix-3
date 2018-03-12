@@ -1,7 +1,8 @@
 #include "globals.h"
 
 void resetServos() {
-  digitalWrite(IGNITIONPIN, HIGH);
+  digitalWrite(IGNITIONPIN0, HIGH);
+  digitalWrite(IGNITIONPIN1, LOW);
   servos.setThrust(0);
   servos.setRPitch(SERVORANGE / 2);
   servos.setRYaw(SERVORANGE / 2);

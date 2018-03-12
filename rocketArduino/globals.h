@@ -20,7 +20,8 @@
 
 #define ABORTPIN 48
 #define FAIRINGPIN 49
-#define IGNITIONPIN 50
+#define IGNITIONPIN0 50
+#define IGNITIONPIN1 51
 
 #define THRUSTPIN 2
 #define RYAWPIN 3
@@ -62,6 +63,8 @@ extern String message; //important message to be written to sd card
 
 extern int countdownStart; //records start time of countdown
 extern int tTime;
+
+extern String input;
 
 class Telemetry {
   public:
@@ -127,6 +130,7 @@ void decent();
 void landing();
 void shutoff();
 void resetServos();
+void serialInput();
 
 extern Servo Thrust;
 extern Servo RYaw;

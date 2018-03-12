@@ -3,9 +3,12 @@
 void setup() {
   Wire.begin();
 
+  Serial.begin(9600);
+
   pinMode(ABORTPIN, INPUT);
   pinMode(FAIRINGPIN, INPUT);
-  pinMode(IGNITIONPIN, OUTPUT);
+  pinMode(IGNITIONPIN0, OUTPUT);
+  pinMode(IGNITIONPIN1, OUTPUT);
 
   Thrust.attach(THRUSTPIN);
   RYaw.attach(RYAWPIN);

@@ -15,6 +15,11 @@
 */
 
 void checkCase() {
+  if (phase <= 2) {
+    if (Serial.available()) {
+      serialInput();
+    }
+  }
   switch (phase) {
     case 0:
       startup();

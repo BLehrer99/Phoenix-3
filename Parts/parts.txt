@@ -4,7 +4,7 @@ AMAZON.com below
 //E-flite Power 15 Brushless Outrunner Motor 950Kv
 //E-flite Plastic Folding Propeller Blades 12 x 8
 //uxcell RC Remote Control Airplane Folding Prop Propeller Spinner D32xH28mm Black
-//EMAX Formula32 45A (Upgrand BLHeli_32) ESC 2-5S DSHOT 1200 MULTISHOT ONESHOT125 ONESHOT42 Electronic Speed Control for FPV Racing Drone Quadcopter by Crazepony
+//Mystery Cloud 50A brushless ESC w/2A BEC RC Speed Controller Brushless Motor RC Airplane Helicopter
 //uxcell 3mm to 5mm Inner Dia Rotatable Universal Steering Shaft U Joint Coupler
 //Davis Instruments Chart Holder Tube (40 x 3-Inch)
 //OSOYOO DUE R3 32 Bit ARM Compatible Shield Module Board With USB Cable for Arduino

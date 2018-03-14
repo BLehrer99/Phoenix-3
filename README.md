@@ -1,49 +1,33 @@
-ul.lst-kix\_uk8t7v4wiib8-8{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-7{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-8{list-style-type:none}.lst-kix\_rxxqkq6mbe57-6>li:before{content:"\\0025cf "}.lst-kix\_rxxqkq6mbe57-7>li:before{content:"\\0025cb "}.lst-kix\_rxxqkq6mbe57-4>li:before{content:"\\0025cb "}.lst-kix\_rxxqkq6mbe57-5>li:before{content:"\\0025a0 "}.lst-kix\_rxxqkq6mbe57-8>li:before{content:"\\0025a0 "}ul.lst-kix\_uk8t7v4wiib8-4{list-style-type:none}.lst-kix\_uk8t7v4wiib8-5>li:before{content:"\\0025a0 "}ul.lst-kix\_rxxqkq6mbe57-0{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-3{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-1{list-style-type:none}.lst-kix\_uk8t7v4wiib8-4>li:before{content:"\\0025cb "}ul.lst-kix\_uk8t7v4wiib8-6{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-2{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-5{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-3{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-0{list-style-type:none}.lst-kix\_uk8t7v4wiib8-3>li:before{content:"\\0025cf "}ul.lst-kix\_rxxqkq6mbe57-4{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-5{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-2{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-6{list-style-type:none}ul.lst-kix\_uk8t7v4wiib8-1{list-style-type:none}ul.lst-kix\_rxxqkq6mbe57-7{list-style-type:none}.lst-kix\_uk8t7v4wiib8-1>li:before{content:"\\0025cb "}.lst-kix\_uk8t7v4wiib8-0>li:before{content:"\\0025cf "}.lst-kix\_uk8t7v4wiib8-2>li:before{content:"\\0025a0 "}.lst-kix\_rxxqkq6mbe57-0>li:before{content:"\\0025cf "}.lst-kix\_rxxqkq6mbe57-1>li:before{content:"\\0025cb "}.lst-kix\_rxxqkq6mbe57-2>li:before{content:"\\0025a0 "}.lst-kix\_rxxqkq6mbe57-3>li:before{content:"\\0025cf "}.lst-kix\_uk8t7v4wiib8-6>li:before{content:"\\0025cf "}.lst-kix\_uk8t7v4wiib8-7>li:before{content:"\\0025cb "}.lst-kix\_uk8t7v4wiib8-8>li:before{content:"\\0025a0 "}ol{margin:0;padding:0}table td,table th{padding:0}.c12{background-color:#ffffff;color:#333333;font-weight:400;text-decoration:none;vertical-align:baseline;font-family:"Arial";font-style:normal}.c2{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c1{margin-left:36pt;padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c9{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c5{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c13{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:center}.c10{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c8{padding:0;margin:0}.c7{color:inherit;text-decoration:inherit}.c4{font-size:12pt}.c3{padding-left:0pt}.c11{text-indent:36pt}.c6{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
-
 The “Phoenix 3” rocket -- Takeoff and land again
 
-        Recently, we had the thrill of seeing the spectacular Falcon 9 Heavy launch and its incredible landing. It's time for Elon not to be alone at this feat and for others to honestly just have fun following in his shoes. I intend to make a rocket that will ascend under its own propulsion and return to Earth for a soft vertical landing. I will accomplish this using a retropropulsion and suicide burn deceleration method after reaching apogee. All flight systems will be internally controlled and Phoenix 3 will have a full array of telemetry and data logging capacity for future development through complete data analysis from previous launches. It will be approximately 76 cm tall (not including the payload fairing) and 7.6 cm in diameter, weighing about 1 kg.
-
-        I expect this project to in total take approximately one and a half years before a proper landing and full reusability is accomplished. Although the project may last for over a year, an average flight will be much shorter. The total time of a flight will be approximately 1 minute and 20 seconds from ignition to booster landing. The timeline of a launch will be as follows with an abort being possible all the way up to main engine ignition:
-
-T  -3:10: Internal systems receive full control of flight
-
+	Recently, we had the thrill of seeing the spectacular Falcon 9 Heavy launch and its incredible landing. It's time for Elon not to be alone at this feat and for others to honestly just have fun following in his shoes. I intend to make a rocket that will ascend under its own propulsion and return to Earth for a soft vertical landing. I will accomplish this using a retropropulsion and suicide burn deceleration method after reaching apogee. All flight systems will be internally controlled and Phoenix 3 will have a full array of telemetry and data logging capacity for future development through complete data analysis from previous launches. It will be approximately 76 cm tall (not including the payload fairing) and 7.6 cm in diameter, weighing about 1 kg.
+	I expect this project to in total take approximately one and a half years before a proper landing and full reusability is accomplished. Although the project may last for over a year, an average flight will be much shorter. The total time of a flight will be approximately 1 minute and 20 seconds from ignition to booster landing. The timeline of a launch will be as follows with an abort being possible all the way up to main engine ignition:
+T  -3:10: Internal systems receive full control of flight
 T - 3:07: Guidance calibration
-
-T  -3:05: Flight control testing
-
-T  -3:00: 3 minute wait period for evacuation
-
-T  -0:01: Main engine ignition
-
+T  -3:05: Flight control testing
+T  -3:00: 3 minute wait period for evacuation
+T  -0:01: Main engine ignition
 T +0:00: Lift off
-
 T +0:03: Main engine cut off
-
 T +0:07: Apogee, fairing jettison
-
 T +0:08: Descent control propulsion startup
-
 T +1:15: Full deceleration for landing
-
 T +1:17: Landing legs deploy
-
 T +1:20: Landing and shutdown
 
 The ascent will be achieved with three Estes class ‘E’ solid rocket engines and will have full aerodynamic control over all 3 axis of flight to maintain a proper trajectory to apogee. All flight computer and software will run on an Arduino Due and will be programed using Arduino C. Apogee will be at approximately 350 meters and likely directly above the range. At this point, the ascent fins will stow and wait to be re-deployed as landing legs. The rate of descent will be controlled with a model aircraft motor and propeller unit and the trajectory will be maintained using a further set of guidance fins. There will also be a set of fins that are meant to counter the rotational moment of the propellor. When near the ground, Phoenix 3 will decelerate to a near stop and deploy its landing legs for a soft landing. Telemetry will consist of a compass, a barometer, an accelerometer, and a gyroscope.
-
 I have already selected all the necessary parts and have started to write the guidance navigation and control software. Also, I have done significant research on the topic but have had limited success in finding good resources on the relatively small scale that I am discussing. It appears that no one has successfully used retropropulsion and a suicide burn to land a model rocket but there is always a first. I have much experience with aerodynamics and basic guidance navigation and control in the context of model aircraft. These skills along with a relatively good programming background may be enough to accomplish this. The first step is to achieve a stable ascent and a successful fairing jettison and afterwards, the landing may be attempted. Although the chances of success are low, as Elon Musk said, "Failure is an option here. If things are not failing, you are not innovating enough."
 
 For my progress and further plans including blueprints and a parts list, see:
-
-*   [https://github.com/BLehrer99/Landing-A-Model-Rocket](https://www.google.com/url?q=https://github.com/BLehrer99/Landing-A-Model-Rocket&sa=D&ust=1521000802983000&usg=AFQjCNF-_DlMIpCsbZAcSxhaLYmQD5lpMQ)
+https://github.com/BLehrer99/Landing-A-Model-Rocket
 
 For reference, see:
+Allain, Rhett. "The Physics of SpaceX's Wicked Double Booster Landing." Wired. February 08, 2018. Accessed March 13, 2018. https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/
+"Surviving a Suicide Burn." Gaming With PHYSICS. Accessed March 13, 2018. http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Samual_Green/Samual_Green/blog_0.html
+"AHRS for Adafruit’s 9-DOF, 10-DOF, LSM9DS0 Breakouts." Introduction | AHRS for Adafruit's 9-DOF, 10-DOF, LSM9DS0 Breakouts | Adafruit Learning System. Accessed March 13, 2018. https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout/introduction
+http://www2.estesrockets.com/pdf/Estes_Engine_Chart.pdf
+"Model rocket." Wikipedia. March 09, 2018. Accessed March 13, 2018. https://en.wikipedia.org/wiki/Model_rocket
+Spacexchannel. "How Not to Land an Orbital Rocket Booster." YouTube. September 14, 2017. Accessed March 13, 2018. https://www.youtube.com/watch?v=bvim4rsNHkQ
+"SpaceX Launch You Up (Uptown Funk Parody)." YouTube. November 01, 2017. Accessed March 13, 2018. https://youtu.be/NY7N02eZGoQ
 
-*   Allain, Rhett. "The Physics of SpaceX's Wicked Double Booster Landing." Wired. February 08, 2018. Accessed March 13, 2018. [https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/](https://www.google.com/url?q=https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/&sa=D&ust=1521000802984000&usg=AFQjCNG01L8lteC7gfVKQGR2v_X9EScu2w)
-*   "Surviving a Suicide Burn." Gaming With PHYSICS. Accessed March 13, 2018. [http://ffden-2.phys.uaf.edu/webproj/211\_fall\_2016/Samual\_Green/Samual\_Green/blog_0.html](https://www.google.com/url?q=http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Samual_Green/Samual_Green/blog_0.html&sa=D&ust=1521000802984000&usg=AFQjCNHGB7yQdaCkP1_GwcImKlrBNCZxyg)
-*   "AHRS for Adafruit’s 9-DOF, 10-DOF, LSM9DS0 Breakouts." Introduction | AHRS for Adafruit's 9-DOF, 10-DOF, LSM9DS0 Breakouts | Adafruit Learning System. Accessed March 13, 2018. [https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout/introduction](https://www.google.com/url?q=https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout/introduction&sa=D&ust=1521000802984000&usg=AFQjCNEkX2zHfFf1udjCHn1mabRO3H4GCg)
-*   [http://www2.estesrockets.com/pdf/Estes\_Engine\_Chart.pdf](https://www.google.com/url?q=http://www2.estesrockets.com/pdf/Estes_Engine_Chart.pdf&sa=D&ust=1521000802985000&usg=AFQjCNHjsObqGlFl18XuCRVz6dB_oJIHGQ)
-*   "Model rocket." Wikipedia. March 09, 2018. Accessed March 13, 2018. [https://en.wikipedia.org/wiki/Model_rocket](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Model_rocket&sa=D&ust=1521000802985000&usg=AFQjCNHjJJYc5oKU1bcAKPCiJfmpCmUecw)
-*   Spacexchannel. "How Not to Land an Orbital Rocket Booster." YouTube. September 14, 2017. Accessed March 13, 2018. [https://www.youtube.com/watch?v=bvim4rsNHkQ](https://www.google.com/url?q=https://www.youtube.com/watch?v%3Dbvim4rsNHkQ&sa=D&ust=1521000802985000&usg=AFQjCNFBrHrJK9j-10-vEvOG-GHGC4ca1w)
-*   "SpaceX Launch You Up (Uptown Funk Parody)." YouTube. November 01, 2017. Accessed March 13, 2018. https://youtu.be/NY7N02eZGoQ
+

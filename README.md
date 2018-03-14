@@ -27,7 +27,6 @@ For my progress and further plans including blueprints and a parts list, see:
 For reference, see:  
 -   Allain, Rhett. "The Physics of SpaceX's Wicked Double Booster Landing." Wired. February 08, 2018. Accessed March 13, 2018. <https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/>  
 -   "Surviving a Suicide Burn." Gaming With PHYSICS. Accessed March 13, 2018. <http://ffden-2.phys.uaf.edu/webproj/211_fall_2016/Samual_Green/Samual_Green/blog_0.html>  
--   "AHRS for Adafruit's 9-DOF, 10-DOF, LSM9DS0 Breakouts." Introduction | AHRS for Adafruit's 9-DOF, 10-DOF, LSM9DS0 Breakouts | Adafruit Learning System. Accessed March 13, 2018. <https://learn.adafruit.com/ahrs-for-adafruits-9-dof-10-dof-breakout/introduction>  
 -   <http://www2.estesrockets.com/pdf/Estes_Engine_Chart.pdf>  
 -   "Model rocket." Wikipedia. March 09, 2018. Accessed March 13, 2018. <https://en.wikipedia.org/wiki/Model_rocket>  
 -   Spacexchannel. "How Not to Land an Orbital Rocket Booster." YouTube. September 14, 2017. Accessed March 13, 2018. <https://www.youtube.com/watch?v=bvim4rsNHkQ>  

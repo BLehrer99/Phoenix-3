@@ -5,7 +5,7 @@ Recently, we had the thrill of seeing the spectacular Falcon 9 Heavy launch and 
 I expect this project to in total take approximately one and a half years before a proper landing and full reusability is accomplished. Although the project may last for over a year, an average flight will be much shorter. The total time of a flight will be approximately 45 seconds from ignition to booster landing. The timeline of a launch will be as follows with an abort being possible all the way up to main engine ignition:
 
 T  -3:10: Internal systems receive full control of flight (0 m)  
-T - 3:07: Guidance calibration (0 m)  
+T  -3:07: Guidance calibration (0 m)  
 T  -3:05: Flight control testing (0 m)  
 T  -3:00: 3 minute wait period for evacuation (0 m)  
 T  -0:01: Main engine ignition (0 m)   

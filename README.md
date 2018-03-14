@@ -22,7 +22,7 @@ The ascent will be achieved with three Estes class 'E' solid rocket engines and 
 I have already selected all the necessary parts and have started to write the guidance navigation and control software. Also, I have done significant research on the topic but have had limited success in finding good resources on the relatively small scale that I am discussing. It appears that no one has successfully used retropropulsion and a suicide burn to land a model rocket but there is always a first. I have much experience with aerodynamics and basic guidance navigation and control in the context of model aircraft. These skills along with a relatively good programming background may be enough to accomplish this. The first step is to achieve a stable ascent and a successful fairing jettison and afterwards, the landing may be attempted. Although the chances of success are low, as Elon Musk said, "Failure is an option here. If things are not failing, you are not innovating enough."
 
 For my progress and further plans including blueprints and a parts list, see:  
--   <https://github.com/BLehrer99/Landing-A-Model-Rocket>
+-   <https://github.com/BLehrer99/Phoenix-3>
 
 For reference, see:  
 -   Allain, Rhett. "The Physics of SpaceX's Wicked Double Booster Landing." Wired. February 08, 2018. Accessed March 13, 2018. <https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/>  

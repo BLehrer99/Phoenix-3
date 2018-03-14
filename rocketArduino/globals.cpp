@@ -1,5 +1,7 @@
 #include "globals.h"
 
+Adafruit_BNO055 bno = Adafruit_BNO055(55);
+
 int phase = 0;
 /*
    phases
@@ -39,7 +41,3 @@ Servo LegFin0;
 Servo LegFin1;
 Servo LegFin2;
 Servo LegFin3;
-
-LSM303 compass;
-L3G gyro;
-SFE_BMP180 pressure;

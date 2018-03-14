@@ -27,7 +27,6 @@ void setup() {
 
 long prevMillis;
 void loop() {
-  Serial.println("test");
   if (millis() - prevMillis >= 1000 * DELTAT) {
     prevMillis = millis();
     message = "";

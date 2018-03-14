@@ -1,24 +1,13 @@
 #include "globals.h"
 
 void readTelemetry() {
-  telemetry.magRead();
   telemetry.aglRead();
   float prevAscentRate = telemetry.ascentRate;
-  telemetry.ascentRateRead();
-  telemetry.accelerationRead(prevAscentRate);
-  telemetry.gyroRead();
-}
-
-void Telemetry::magRead() {
-  compass.read();
-  mag = compass.heading();
+  telemetry.ahrsRead();
 }
 
 void Telemetry::aglRead() {
-  double P = getPressure();
-  if (P == -9999)
-    P = 0;
-  agl = pressure.altitude(P, qfe);
+
 }
 
 void Telemetry::ascentRateRead() {
@@ -31,32 +20,13 @@ void Telemetry::accelerationRead(float prevAscentRate) {
   acceleration = (ascentRate - prevAscentRate) / ascentSamplesPerSecond;
 }
 
-void Telemetry::gyroRead() {
-  gyro.read();
-  float samplesPerSecond = 1000000.0 / float(micros() - prevGyroMicros);
-  prevGyroMicros = micros();
+void Telemetry::ahrsRead() {
+  /* Get a new sensor event */
+  sensors_event_t event;
+  bno.getEvent(&event);
 
-  pitchRate = (float(gyro.g.x) * 8.75 / 1000.0) - 1;
-  yawRate = (float(gyro.g.y) * 8.75 / 1000.0);
-  rollRate = (float(gyro.g.z) * 8.75 / 1000.0) + 0.1;
-
-  float deltaPitch = pitchRate * samplesPerSecond;
-  float deltaYaw = yawRate * samplesPerSecond;
-  float deltaRoll = rollRate * samplesPerSecond;
-
-  pitch = int(pitch + deltaPitch) % 360;
-  yaw = int(yaw + deltaYaw) % 360;
-  roll = int(roll + deltaRoll) % 360;
-}
-
-double Telemetry::getPressure() {
-  char status;
-  double P;
-  status = pressure.getPressure(P, temp);
-  if (status != 0) {
-    return (P);
-  } else {
-    message += "error: retrieving pressure measurement, ";
-    return -9999;
-  }
+  /* save the floating point data */
+  telemetry.pitch = event.orientation.x;
+  telemetry.yaw = event.orientation.x;
+  telemetry.roll = event.orientation.x;
 }

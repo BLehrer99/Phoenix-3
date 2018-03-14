@@ -4,10 +4,11 @@
 #include "Arduino.h"
 
 #include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <utility/imumaths.h>
 
-#include <SFE_BMP180.h>
-#include <LSM303.h>
-#include <L3G.h>
+extern Adafruit_BNO055 bno;
 
 #include <SPI.h>
 
@@ -15,7 +16,7 @@
 
 #include <Servo.h>
 
-#define DELTAT 0.001
+#define DELTAT 0.1
 #define COUNTLENGTH 3
 
 #define ABORTPIN 48
@@ -50,11 +51,7 @@
 
 #define SERVORANGE 180
 
-#define ENGINEDELAY 4000 //ms
-
-extern LSM303 compass;
-extern L3G gyro;
-extern SFE_BMP180 pressure;
+#define ENGINEDELAY 8600 //ms
 
 extern File myFile;
 
@@ -68,12 +65,10 @@ extern String input;
 
 class Telemetry {
   public:
-    void magRead();
-    double getPressure();
     void aglRead();
     void ascentRateRead();
     void accelerationRead(float prevAscentRate);
-    void gyroRead();
+    void ahrsRead();
 
     float mag;
     float agl;

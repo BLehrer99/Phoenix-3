@@ -15,7 +15,7 @@
 
 #include <Servo.h>
 
-#define DELTAT 0.01
+#define DELTAT 0.001
 #define COUNTLENGTH 3
 
 #define ABORTPIN 48

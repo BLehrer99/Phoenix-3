@@ -62,7 +62,17 @@ int setupPressure() {
 }
 
 void startup() {
-  myFile = SD.open("log.txt", FILE_WRITE);
+//  if (!SD.begin(4)) {
+//    message += "aborted: start sd, ";
+//    phase = 9;
+//    return;
+//  }
+//  myFile = SD.open("log.txt", FILE_WRITE);
+//  if (!myFile) {
+//    message += "aborted: could not open file, ";
+//    phase = 9;
+//    return;
+//  }
   resetServos();
 
   if (digitalRead(ABORTPIN) == HIGH) {

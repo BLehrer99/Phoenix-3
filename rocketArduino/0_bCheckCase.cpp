@@ -53,6 +53,8 @@ void checkCase() {
       break;
     default:
       message += "error: reached end of checkCase, ";
+      writeSD();
+      //while (1);
       break;
   }
 }

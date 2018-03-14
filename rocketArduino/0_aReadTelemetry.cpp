@@ -36,9 +36,9 @@ void Telemetry::gyroRead() {
   float samplesPerSecond = 1000000.0 / float(micros() - prevGyroMicros);
   prevGyroMicros = micros();
 
-  pitchRate = float(gyro.g.x);
-  yawRate = float(gyro.g.y);
-  rollRate = float(gyro.g.z);
+  pitchRate = (float(gyro.g.x) * 8.75 / 1000.0) - 1;
+  yawRate = (float(gyro.g.y) * 8.75 / 1000.0);
+  rollRate = (float(gyro.g.z) * 8.75 / 1000.0) + 0.1;
 
   float deltaPitch = pitchRate * samplesPerSecond;
   float deltaYaw = yawRate * samplesPerSecond;

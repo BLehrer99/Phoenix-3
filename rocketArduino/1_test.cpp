@@ -9,5 +9,6 @@ void test() {
   //run test sequence*********************
   message += "testing systems, ";
   countdownStart = millis();
+  ++phase;
 }
 

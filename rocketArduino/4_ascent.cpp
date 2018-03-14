@@ -3,7 +3,7 @@
 bool meco = false;
 int mecoTime;
 
-void accent() {
+void ascent() {
   //guidence**************************
 
   if (telemetry.acceleration <= 0 && !meco) {

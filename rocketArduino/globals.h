@@ -124,7 +124,7 @@ void startup();
 void test();
 void countdown();
 void ignition();
-void accent();
+void ascent();
 void apogee();
 void decent();
 void landing();

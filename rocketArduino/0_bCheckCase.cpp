@@ -34,7 +34,7 @@ void checkCase() {
       ignition();
       break;
     case 4:
-      accent();
+      ascent();
       break;
     case 5:
       apogee();

@@ -1,5 +1,6 @@
 AMAZON.com below
-//KNACRO GY-89 10DOF LSM303D + L3GD20 + BMP180 barometric pressure sensor module Three-axis gyroscope + triaxial accelerometer + three-axis magnetic field + pressure
+//Adafruit BMP280 I2C or SPI Barometric Pressure and Altitude Sensor
+//Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout - BNO055
 //Zeee 11.1V 30C 2200mAh Lipo RC Rechargeable Battery for RC Helicopter/Airplane/Car/Truck/Boat, RC Hobby
 //E-flite Power 15 Brushless Outrunner Motor 950Kv
 //E-flite Plastic Folding Propeller Blades 12 x 8

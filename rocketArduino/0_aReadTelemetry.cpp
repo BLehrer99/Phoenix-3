@@ -3,9 +3,9 @@
 void readTelemetry() {
   telemetry.magRead();
   telemetry.aglRead();
-  float prevAccentRate = telemetry.accentRate;
-  telemetry.accentRateRead();
-  telemetry.accelerationRead(prevAccentRate);
+  float prevAscentRate = telemetry.ascentRate;
+  telemetry.ascentRateRead();
+  telemetry.accelerationRead(prevAscentRate);
   telemetry.gyroRead();
 }
 
@@ -21,14 +21,14 @@ void Telemetry::aglRead() {
   agl = pressure.altitude(P, qfe);
 }
 
-void Telemetry::accentRateRead() {
-  accentSamplesPerSecond = 1000000.0 / float(micros() - prevAltMicros);
+void Telemetry::ascentRateRead() {
+  ascentSamplesPerSecond = 1000000.0 / float(micros() - prevAltMicros);
   prevAltMicros = micros();
-  accentRate = (agl - prevAgl) * accentSamplesPerSecond;
+  ascentRate = (agl - prevAgl) * ascentSamplesPerSecond;
 }
 
-void Telemetry::accelerationRead(float prevAccentRate) {
-  acceleration = (accentRate - prevAccentRate) / accentSamplesPerSecond;
+void Telemetry::accelerationRead(float prevAscentRate) {
+  acceleration = (ascentRate - prevAscentRate) / ascentSamplesPerSecond;
 }
 
 void Telemetry::gyroRead() {

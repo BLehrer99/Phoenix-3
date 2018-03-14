@@ -71,14 +71,14 @@ class Telemetry {
     void magRead();
     double getPressure();
     void aglRead();
-    void accentRateRead();
-    void accelerationRead(float prevAccentRate);
+    void ascentRateRead();
+    void accelerationRead(float prevAscentRate);
     void gyroRead();
 
     float mag;
     float agl;
     float prevAgl;
-    float accentRate;
+    float ascentRate;
     float pitch;
     float yaw;
     float roll;
@@ -93,7 +93,7 @@ class Telemetry {
   private:
     unsigned long prevAltMicros = 0;
     unsigned long prevGyroMicros = 0;
-    int accentSamplesPerSecond;
+    int ascentSamplesPerSecond;
 };
 
 extern Telemetry telemetry;

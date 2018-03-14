@@ -7,7 +7,7 @@ int phase = 0;
    1: control surface test
    2: countdown
    3: ignition
-   4: accent
+   4: ascent
    5: peak
    6: decent
    7: landing

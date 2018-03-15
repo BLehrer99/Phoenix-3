@@ -3,7 +3,7 @@
 void resetServos() {
   digitalWrite(IGNITIONPIN0, HIGH);
   digitalWrite(IGNITIONPIN1, LOW);
-  servos.setThrust(0);
+  servos.setThrust(MOTORRESET);
   servos.setRPitch(SERVORANGE / 2);
   servos.setRYaw(SERVORANGE / 2);
   servos.setRollComp(SERVORANGE / 2);

@@ -61,6 +61,9 @@ extern Adafruit_BMP280 bme;
 #define LEGS3TRIM 0
 
 #define SERVORANGE 180
+#define MOTORMAX 170
+#define MOTORMIN 65
+#define MOTORRESET 50
 
 #define ENGINEDELAY 8600 //ms
 

@@ -30,7 +30,7 @@ void loop() {
   if (millis() - prevMillis >= 1000 * DELTAT) {
     prevMillis = millis();
     message = "";
-    tTime = phase >= 2 ? (millis() - countdownStart) - (1000 * COUNTLENGTH * 60) : -1000000;
+    tTime = phase >= 2 ? (millis() - countdownStart) - (1000 * COUNTLENGTH * 60) : -100000;
     readTelemetry();
     checkCase();
     writeSD();

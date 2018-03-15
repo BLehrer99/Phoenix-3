@@ -2,6 +2,8 @@
 
 Adafruit_BNO055 bno = Adafruit_BNO055(55);
 
+Adafruit_BMP280 bme;
+
 int phase = 0;
 /*
    phases

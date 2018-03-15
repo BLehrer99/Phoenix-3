@@ -104,24 +104,34 @@ int setupAHRS() {
 
 
 int setupPressure() {
+  if (!bme.begin()) {
+    message += "Could not find a valid BMP280 sensor, check wiring!, ";
+    Serial.println("Could not find a valid BMP280 sensor, check wiring!");
+    phase = 9;
+    return 0;
+  }
+  telemetry.qfe = bme.readPressure();
   return 1;
 }
 
 void startup() {
-  //  if (!SD.begin(4)) {
-  //    message += "aborted: start sd, ";
-  //    phase = 9;
-  //    return;
-  //  }
-  //  myFile = SD.open("log.txt", FILE_WRITE);
-  //  if (!myFile) {
-  //    message += "aborted: could not open file, ";
-  //    phase = 9;
-  //    return;
-  //  }
+  if (!SD.begin(4)) {
+    Serial.println("aborted: start sd");
+    message += "aborted: start sd, ";
+    phase = 9;
+    return;
+  }
+  myFile = SD.open("log.txt", FILE_WRITE);
+  if (!myFile) {
+    Serial.println("aborted: could not open file");
+    message += "aborted: could not open file, ";
+    phase = 9;
+    return;
+  }
   resetServos();
 
   if (digitalRead(ABORTPIN) == HIGH) {
+    Serial.println("aborted: abort switch");
     message += "aborted: abort switch, ";
     phase = 9;
     return;
@@ -130,6 +140,10 @@ void startup() {
   if (!setupAHRS())
     return;
 
+  if (!setupPressure())
+    return;
+
   message += "startup initiated: calibrating, ";
   ++phase;
+  delay(1000);
 }

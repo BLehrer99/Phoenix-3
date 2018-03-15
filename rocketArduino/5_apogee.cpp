@@ -11,7 +11,7 @@ void apogee() {
     message += "fairing jettison confirmed, ";
   }
   for (int i = 0; i < 4; ++i) {
-    message += "legFins stowed";
+    message += "leg-fins stowed, ";
     servos.setLegFin(0, 0);
   }
   ++phase;

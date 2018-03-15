@@ -28,6 +28,8 @@ extern Adafruit_BMP280 bme;
 #define DELTAT 0.1
 #define COUNTLENGTH 3
 
+#define BURNTIME 2.4
+
 #define ABORTPIN 48
 #define FAIRINGPIN 49
 #define IGNITIONPIN0 50

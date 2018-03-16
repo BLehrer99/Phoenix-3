@@ -2,28 +2,22 @@
 
 void decent() {
   message += "retro burn, ";
-  if (telemetry.ascentRate > 0) {
-    telemetry.thrust -= 10;
-    if (telemetry.thrust < MOTORMIN) {
-      telemetry.thrust = MOTORMIN;
-    }
-  } else if (telemetry.ascentRate < -20) {
-    telemetry.thrust += 10;
-    if (telemetry.thrust > MOTORMAX) {
-      telemetry.thrust = MOTORMAX;
-    }
-  } else if (telemetry.ascentRate > -9) {
-    telemetry.thrust -= 5;
-    if (telemetry.thrust < MOTORMIN) {
-      telemetry.thrust = MOTORMIN;
-    }
-  } else if (telemetry.ascentRate < -11) {
-    telemetry.thrust += 5;
-    if (telemetry.thrust > MOTORMAX) {
-      telemetry.thrust = MOTORMAX;
-    }
+  if (telemetry.ascentRate > DECENTRATE + 10) {
+    servos.thrust -= 10;
+  } else if (telemetry.ascentRate < DECENTRATE - 10) {
+    servos.thrust += 10;
+  } else if (telemetry.ascentRate > DECENTRATE + 1) {
+    servos.thrust -= 5;
+  } else if (telemetry.ascentRate < DECENTRATE - 1) {
+    servos.thrust += 5;
   }
-  setThrust(telemetry.thrust);
+
+  if (servos.thrust > 100) {
+    servos.thrust = 100;
+  }  else if (servos.thrust < 0) {
+    servos.thrust = 0;
+  }
+  servos.setThrust();
   //decent sequece***************************
   if (telemetry.ascentRate <= -20) {
     message += "error: decent rate exceeded -20 m/s, ";

@@ -14,7 +14,7 @@ extern Adafruit_BNO055 bno;
 
 #define BMP_SCK 13
 #define BMP_MISO 12
-#define BMP_MOSI 11 
+#define BMP_MOSI 11
 #define BMP_CS 10
 
 extern Adafruit_BMP280 bme;
@@ -29,6 +29,8 @@ extern Adafruit_BMP280 bme;
 #define COUNTLENGTH 3
 
 #define BURNTIME 2.4
+
+#define DECENTRATE -10
 
 #define ABORTPIN 48
 #define FAIRINGPIN 49
@@ -109,13 +111,14 @@ extern Telemetry telemetry;
 
 class Servos {
   public:
-    void setThrust(int);
-    void setRYaw(int);
-    void setRPitch(int);
-    void setRollComp(int);
-    void setLegFin(int, int);
+    void setThrust();
+    void setRYaw();
+    void setRPitch();
+    void setRollComp();
+    void setLegFin();
 
     int thrust;
+    bool ignition = false;
     int rYaw;
     int rPitch;
     int rollComp;

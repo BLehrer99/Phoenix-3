@@ -3,14 +3,15 @@
 void resetServos() {
   digitalWrite(IGNITIONPIN0, HIGH);
   digitalWrite(IGNITIONPIN1, LOW);
-  servos.setThrust(MOTORRESET);
-  servos.setRPitch(SERVORANGE / 2);
-  servos.setRYaw(SERVORANGE / 2);
-  servos.setRollComp(SERVORANGE / 2);
+  servos.thrust = 0;
+  servos.rPitch = SERVORANGE / 2;
+  servos.rYaw = SERVORANGE / 2;
+  servos.rollComp = SERVORANGE / 2;
   if (phase < 7)
     for (int i = 0; i < 4; ++i) {
-      servos.setLegFin(i, 30);
+      servos.legs[i] = 30;
 
     }
   message += "reseting servos, ";
+  updateControls();
 }

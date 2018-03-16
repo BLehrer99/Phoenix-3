@@ -33,6 +33,7 @@ void loop() {
     tTime = phase >= 2 ? (millis() - countdownStart) - (1000 * COUNTLENGTH * 60) : -100000;
     readTelemetry();
     checkCase();
+    updateControls();
     writeSD();
   }
 }

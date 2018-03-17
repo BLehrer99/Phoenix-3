@@ -110,7 +110,9 @@ int setupPressure() {
     phase = 9;
     return 0;
   }
-  telemetry.qfe = bme.readPressure();
+  float aQFE = bme.readPressure() / 100.0;
+  delay(10);
+  telemetry.qfe = ((aQFE + (bme.readPressure() / 100.0)) / 2.0);
   return 1;
 }
 

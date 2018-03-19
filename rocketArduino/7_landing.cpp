@@ -11,7 +11,7 @@ void landing() {
     landingStartTime = millis();
     message += "landing legs deploy, ";
     for (int i = 0; i < 4; ++i) {
-      servos.legs[i] = 100;
+      servos.legs[i] = LegsLand[i];
     }
   }
   if (telemetry.agl <= 1 && millis() - landingStartTime >= 1000) {

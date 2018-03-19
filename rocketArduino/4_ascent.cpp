@@ -2,10 +2,10 @@
 
 bool meco = false;
 int mecoTime;
+bool startedAsc = false;
 
 void ascent() {
   //guidence**************************
-
   if (telemetry.acceleration <= 0 || tTime >= (BURNTIME + 0.1) * 1000 && !meco) {
     meco = true;
     mecoTime = millis();

@@ -2,8 +2,6 @@
 
 void updateControls() {
   servos.setThrust();
-  servos.setRYaw();
-  servos.setRPitch();
   servos.setRollComp();
   servos.setLegFin();
   if (servos.ignition == true) {

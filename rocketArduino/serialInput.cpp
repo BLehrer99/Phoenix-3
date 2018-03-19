@@ -6,14 +6,6 @@ void serialInput() {
     while (!Serial.available());
     input = Serial.readString();
     servos.thrust = input.toInt();
-  } else if (input == "RYaw") {
-    while (!Serial.available());
-    input = Serial.readString();
-    servos.rYaw = input.toInt();
-  } else if (input == "RPitch") {
-    while (!Serial.available());
-    input = Serial.readString();
-    servos.rPitch = input.toInt();
   } else if (input == "RollComp") {
     while (!Serial.available());
     input = Serial.readString();

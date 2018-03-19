@@ -38,8 +38,6 @@ extern Adafruit_BMP280 bme;
 #define IGNITIONPIN1 51
 
 #define THRUSTPIN 2
-#define RYAWPIN 3
-#define RPITCHPIN 5
 //skip 4, sd
 #define ROLLCOMP0PIN 6
 #define ROLLCOMP1PIN 7
@@ -50,17 +48,11 @@ extern Adafruit_BMP280 bme;
 #define LEGS2PIN 12
 #define LEGS3PIN 13
 
-#define RYAWTRIM 0
-#define RPITCHTRIM 0
 #define THRUSTTRIM 0
 #define ROLLCOMP0TRIM 0
 #define ROLLCOMP1TRIM 0
 #define ROLLCOMP2TRIM 0
 #define ROLLCOMP3TRIM 0
-#define LEGS0TRIM 0
-#define LEGS1TRIM 0
-#define LEGS2TRIM 0
-#define LEGS3TRIM 0
 
 #define SERVORANGE 180
 #define MOTORMAX 170
@@ -112,18 +104,15 @@ extern Telemetry telemetry;
 class Servos {
   public:
     void setThrust();
-    void setRYaw();
-    void setRPitch();
     void setRollComp();
     void setLegFin();
 
     int thrust;
     bool ignition = false;
-    int rYaw;
-    int rPitch;
     int rollComp;
     int launchPitch;
     int legs[4];
+    int fins[4];
 };
 
 extern Servos servos;
@@ -144,9 +133,11 @@ void shutoff();
 void resetServos();
 void serialInput();
 
+extern const int LegsLand[4];
+extern const int LegsStow[4];
+extern const int LegsAsc[4];
+
 extern Servo Thrust;
-extern Servo RYaw;
-extern Servo RPitch;
 extern Servo RollComp0;
 extern Servo RollComp1;
 extern Servo RollComp2;

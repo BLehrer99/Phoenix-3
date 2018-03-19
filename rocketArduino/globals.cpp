@@ -27,14 +27,16 @@ String input = "";
 
 int tTime;
 
+const int LegsLand[4] = {0, 0, 0, 0};
+const int LegsStow[4] = {0, 0, 0, 0};
+const int LegsAsc[4] = {0, 0, 0, 0};
+
 Telemetry telemetry;
 Servos servos;
 
 File myFile;
 
 Servo Thrust;
-Servo RYaw;
-Servo RPitch;
 Servo RollComp0;
 Servo RollComp1;
 Servo RollComp2;

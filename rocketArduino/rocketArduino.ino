@@ -11,8 +11,6 @@ void setup() {
   pinMode(IGNITIONPIN1, OUTPUT);
 
   Thrust.attach(THRUSTPIN);
-  RYaw.attach(RYAWPIN);
-  RPitch.attach(RPITCHPIN);
   RollComp0.attach(ROLLCOMP0PIN);
   RollComp1.attach(ROLLCOMP1PIN);
   RollComp2.attach(ROLLCOMP2PIN);

@@ -27,6 +27,8 @@ String input = "";
 
 int tTime;
 
+int burnHeight;
+
 const int LegsLand[4] = {0, 0, 0, 0};
 const int LegsStow[4] = {0, 0, 0, 0};
 const int LegsAsc[4] = {0, 0, 0, 0};

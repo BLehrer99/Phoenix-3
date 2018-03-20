@@ -1,28 +1,11 @@
 #include "globals.h"
 
 void decent() {
-  message += "retro burn, ";
-  if (telemetry.ascentRate > DECENTRATE + 10) {
-    servos.thrust -= 10;
-  } else if (telemetry.ascentRate < DECENTRATE - 10) {
-    servos.thrust += 10;
-  } else if (telemetry.ascentRate > DECENTRATE + 1) {
-    servos.thrust -= 5;
-  } else if (telemetry.ascentRate < DECENTRATE - 1) {
-    servos.thrust += 5;
-  }
+  //guidance
 
-  if (servos.thrust > 100) {
+  if (telemetry.agl <= burnHeight + 10) {
+    message += "retro burn, ";
     servos.thrust = 100;
-  }  else if (servos.thrust < 0) {
-    servos.thrust = 0;
-  }
-  servos.setThrust();
-  //decent sequece***************************
-  if (telemetry.ascentRate <= -20) {
-    message += "error: decent rate exceeded -20 m/s, ";
-  }
-  if (telemetry.agl <= 5) {
     message += "landing, ";
     ++phase;
   }

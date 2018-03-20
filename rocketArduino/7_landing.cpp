@@ -4,9 +4,8 @@ bool landingStarted = false;
 int landingStartTime;
 
 void landing() {
-  //full decel --------------------------------------
   message += "landing, ";
-  if (!landingStarted && telemetry.agl <= 4) {
+  if (!landingStarted) {
     landingStarted = true;
     landingStartTime = millis();
     message += "landing legs deploy, ";
@@ -14,7 +13,7 @@ void landing() {
       servos.legs[i] = LegsLand[i];
     }
   }
-  if (telemetry.agl <= 1 && millis() - landingStartTime >= 1000) {
+  if (telemetry.agl <= 1 || millis() - landingStartTime >= 1000) {
     message += "landed, shutoff, ";
     ++phase;
   }

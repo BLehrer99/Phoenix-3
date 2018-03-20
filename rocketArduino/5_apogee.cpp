@@ -14,6 +14,11 @@ void apogee() {
     servos.legs[i] = LegsStow[i];
   }
   message += "leg-fins stowed, ";
+
+  burnHeight = 9.81 * telemetry.agl;
+  burnHeight /= 9.81 + LANDINGACCEL;    //burn height algorithm
+
+  message += "burn height: " + String(burnHeight) + ", ";
   ++phase;
 }
 

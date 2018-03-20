@@ -59,6 +59,8 @@ extern Adafruit_BMP280 bme;
 #define MOTORMIN 65
 #define MOTORRESET 50
 
+#define LANDINGACCEL -20
+
 #define ENGINEDELAY 8600 //ms
 
 extern File myFile;
@@ -70,6 +72,8 @@ extern int countdownStart; //records start time of countdown
 extern int tTime;
 
 extern String input;
+
+extern int burnHeight;
 
 class Telemetry {
   public:

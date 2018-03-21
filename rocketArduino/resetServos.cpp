@@ -1,10 +1,9 @@
 #include "globals.h"
 
 void resetServos() {
-  digitalWrite(IGNITIONPIN0, HIGH);
-  digitalWrite(IGNITIONPIN1, LOW);
-  servos.thrust = 0;
-  servos.rollComp = SERVORANGE / 2;
+  servos.landLight = false;
+  servos.mainLight = false;
+  servos.rollComp = 80;
   if (phase < 7) {
     for (int i = 0; i < 4; ++i) {
       servos.legs[i] = LegsAsc[i];

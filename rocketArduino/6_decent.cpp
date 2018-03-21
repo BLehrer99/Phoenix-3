@@ -2,10 +2,12 @@
 
 void decent() {
   //guidance
-
-  if (telemetry.agl <= burnHeight + 10) {
-    message += "retro burn, ";
-    servos.thrust = 100;
+  float finalVel = -pow(telemetry.ascentRate, 2) + (2 * ((LANDINGFORCE / MASS) - 9.81) * telemetry.agl);
+  if (telemetry.agl <= burnHeight + 10 || finalVel <= 10) {
+    message += "landing burn, ";
+    servos.landLight = true;
+  }
+  if (telemetry.agl <= 10) {
     message += "landing, ";
     ++phase;
   }

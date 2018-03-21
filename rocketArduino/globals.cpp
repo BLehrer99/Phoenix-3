@@ -38,7 +38,6 @@ Servos servos;
 
 File myFile;
 
-Servo Thrust;
 Servo RollComp0;
 Servo RollComp1;
 Servo RollComp2;

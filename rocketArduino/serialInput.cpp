@@ -2,11 +2,7 @@
 
 void serialInput() {
   input = Serial.readString();
-  if (input == "Thrust") {
-    while (!Serial.available());
-    input = Serial.readString();
-    servos.thrust = input.toInt();
-  } else if (input == "RollComp") {
+  if (input == "RollComp") {
     while (!Serial.available());
     input = Serial.readString();
     servos.rollComp = input.toInt();
@@ -26,13 +22,21 @@ void serialInput() {
     while (!Serial.available());
     input = Serial.readString();
     servos.legs[3] = input.toInt();
-  } else if (input == "Ignition") {
+  } else if (input == "Main") {
     while (!Serial.available());
     input = Serial.readString();
     if (input == "on" || input == "On" || input == "ON") {
-      servos.ignition = true;
+      servos.mainLight = true;
     } else if (input == "off" || input == "Off" || input == "OFF") {
-      servos.ignition = false;
+      servos.mainLight = false;
+    }
+  } else if (input == "Land") {
+    while (!Serial.available());
+    input = Serial.readString();
+    if (input == "on" || input == "On" || input == "ON") {
+      servos.landLight = true;
+    } else if (input == "off" || input == "Off" || input == "OFF") {
+      servos.landLight = false;
     }
   } else if (input == "Abort" || input == "ABORT" || input == "abort") {
     message += "aborted: abort command serial, ";

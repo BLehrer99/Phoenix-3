@@ -25,6 +25,9 @@ extern Adafruit_BMP280 bme;
 
 #include <Servo.h>
 
+#define MASS 1
+#define LANDINGFORCE 24
+
 #define DELTAT 0.1
 #define COUNTLENGTH 3
 
@@ -34,10 +37,9 @@ extern Adafruit_BMP280 bme;
 
 #define ABORTPIN 48
 #define FAIRINGPIN 49
-#define IGNITIONPIN0 50
-#define IGNITIONPIN1 51
+#define MAINIGNITIONPIN 50
+#define LANDIGNITIONPIN 51
 
-#define THRUSTPIN 2
 //skip 4, sd
 #define ROLLCOMP0PIN 6
 #define ROLLCOMP1PIN 7
@@ -48,7 +50,6 @@ extern Adafruit_BMP280 bme;
 #define LEGS2PIN 12
 #define LEGS3PIN 13
 
-#define THRUSTTRIM 0
 #define ROLLCOMP0TRIM 0
 #define ROLLCOMP1TRIM 0
 #define ROLLCOMP2TRIM 0
@@ -107,12 +108,14 @@ extern Telemetry telemetry;
 
 class Servos {
   public:
-    void setThrust();
     void setRollComp();
     void setLegFin();
+    void lightMain();
+    void lightLand();
 
-    int thrust;
-    bool ignition = false;
+    bool mainLight = false;
+    bool landLight = true;
+
     int rollComp;
     int launchPitch;
     int legs[4];
@@ -141,7 +144,6 @@ extern const int LegsLand[4];
 extern const int LegsStow[4];
 extern const int LegsAsc[4];
 
-extern Servo Thrust;
 extern Servo RollComp0;
 extern Servo RollComp1;
 extern Servo RollComp2;

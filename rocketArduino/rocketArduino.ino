@@ -7,10 +7,9 @@ void setup() {
 
   pinMode(ABORTPIN, INPUT);
   pinMode(FAIRINGPIN, INPUT);
-  pinMode(IGNITIONPIN0, OUTPUT);
-  pinMode(IGNITIONPIN1, OUTPUT);
+  pinMode(MAINIGNITIONPIN, OUTPUT);
+  pinMode(LANDIGNITIONPIN, OUTPUT);
 
-  Thrust.attach(THRUSTPIN);
   RollComp0.attach(ROLLCOMP0PIN);
   RollComp1.attach(ROLLCOMP1PIN);
   RollComp2.attach(ROLLCOMP2PIN);

@@ -1,12 +1,18 @@
 #include "globals.h"
 
-void Servos::setThrust() {
-  if (thrust == 0) {
-    Thrust.write(MOTORRESET);
+void Servos::lightMain(){
+  if(mainLight){
+    digitalWrite(MAINIGNITIONPIN, HIGH);
   } else {
-    int val = (MOTORMAX - MOTORMIN) * thrust;
-    val += MOTORMIN;
-    Thrust.write(val + THRUSTTRIM);
+    digitalWrite(MAINIGNITIONPIN, LOW);
+  }
+}
+
+void Servos::lightLand(){
+    if(landLight){
+    digitalWrite(LANDIGNITIONPIN, HIGH);
+  } else {
+    digitalWrite(LANDIGNITIONPIN, LOW);
   }
 }
 

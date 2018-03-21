@@ -1,12 +1,6 @@
 AMAZON.com below
 //Adafruit BMP280 I2C or SPI Barometric Pressure and Altitude Sensor
 //Adafruit 9-DOF Absolute Orientation IMU Fusion Breakout - BNO055
-//Zeee 11.1V 30C 2200mAh Lipo RC Rechargeable Battery for RC Helicopter/Airplane/Car/Truck/Boat, RC Hobby
-//E-flite BL15 Outrunner Motor 840Kv
-//E-flite Plastic Folding Propeller Blades 12 x 8
-//uxcell RC Remote Control Airplane Folding Prop Propeller Spinner D32xH28mm Black
-//E-flite 30-Amp Pro Switch-Mode BEC Brushless ESC (V2)
-//uxcell 3mm to 5mm Inner Dia Rotatable Universal Steering Shaft U Joint Coupler
 //Davis Instruments Chart Holder Tube (40 x 3-Inch)
 //OSOYOO DUE R3 32 Bit ARM Compatible Shield Module Board With USB Cable for Arduino
 //kuman K15 Ethernet Shield W5100 Micro-sd Card Slot for Arduino 2009 UNO Mega 1280 Mega 2560 Nano Duemilanove
@@ -19,8 +13,10 @@ AMAZON.com below
 //x4 wood iso triangle landing legs, 2.12 inch base, 6.09 inch edge
 //x4 ^^ but out of steel for heat shield
 //x4 fiberglass cloth heat hinges
-//x3 per launch E12-4 engines
-//x3 per launch E12-4 igniters and plugs
+//x3 per launch E12-8 engines
+//x3 per launch E12-8 igniters and plugs
+//x2 per launch D12 engines
+//x2 per launch D12 igniters and plugs
 //pushrods
 //lots of servos
 //relay for ignition

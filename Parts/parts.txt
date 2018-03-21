@@ -35,4 +35,3 @@ AMAZON.com below
 //hot glue
 //silicone, heat
 //coathanger, for pushrods
-//svg for motor mount

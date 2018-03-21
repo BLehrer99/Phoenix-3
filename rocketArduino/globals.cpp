@@ -12,8 +12,8 @@ int phase = 0;
    2: countdown
    3: ignition
    4: ascent
-   5: peak
-   6: decent
+   5: apogee
+   6: descent
    7: landing
    8: shutoff
    9: powered off

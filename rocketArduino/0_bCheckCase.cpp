@@ -8,7 +8,7 @@
    3: ignition
    4: ascent
    5: apogee
-   6: decent
+   6: descent
    7: landing
    8: shutoff
    9: powered off
@@ -40,7 +40,7 @@ void checkCase() {
       apogee();
       break;
     case 6:
-      decent();
+      descent();
       break;
     case 7:
       landing();

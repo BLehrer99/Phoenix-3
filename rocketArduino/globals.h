@@ -33,7 +33,7 @@ extern Adafruit_BMP280 bme;
 
 #define BURNTIME 2.4
 
-#define DECENTRATE -10
+#define DESCENTRATE -10
 
 #define ABORTPIN 48
 #define FAIRINGPIN 49
@@ -134,7 +134,7 @@ void countdown();
 void ignition();
 void ascent();
 void apogee();
-void decent();
+void descent();
 void landing();
 void shutoff();
 void resetServos();

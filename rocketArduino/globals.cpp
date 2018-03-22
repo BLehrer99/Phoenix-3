@@ -29,9 +29,9 @@ int tTime;
 
 int burnHeight;
 
-const int LegsLand[4] = {0, 0, 0, 0};
-const int LegsStow[4] = {0, 0, 0, 0};
-const int LegsAsc[4] = {0, 0, 0, 0};
+const int LegsLand[4] = {40, 10, 90, 85};
+const int LegsStow[4] = {105, 65, 35, 150};
+const int LegsAsc[4] = {95, 60, 45, 140};
 
 Telemetry telemetry;
 Servos servos;

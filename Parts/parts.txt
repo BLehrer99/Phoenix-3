@@ -13,10 +13,10 @@ AMAZON.com below
 //x4 wood iso triangle landing legs, 2.12 inch base, 6.09 inch edge
 //x4 ^^ but out of steel for heat shield
 //x4 fiberglass cloth heat hinges
-//x3 per launch E12-8 engines
-//x3 per launch E12-8 igniters and plugs
-//x2 per launch D12 engines
-//x2 per launch D12 igniters and plugs
+//x5 per launch E12-8 engines
+//x5 per launch E12-8 igniters and plugs
+//x2 per launch C6 engines
+//x2 per launch C6 igniters and plugs
 //pushrods
 //lots of servos
 //relay for ignition

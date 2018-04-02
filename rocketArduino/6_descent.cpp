@@ -2,8 +2,8 @@
 
 void descent() {
   //guidance
-  float finalVel = -pow(telemetry.ascentRate, 2) + (2 * ((LANDINGFORCE / MASS) - 9.81) * telemetry.agl);
-  if (telemetry.agl <= burnHeight + 10 || finalVel <= 10) {
+  float finalVel = telemetry.ascentRate + ((TIMEBURN1 * ((FORCEBURN1 / MASS) + GRAVITY)) + (TIMEBURN2 * ((FORCEBURN2 / MASS) + GRAVITY)));
+  if (telemetry.agl <= burnHeight + 10 || finalVel >= -2) {
     message += "landing burn, ";
     servos.landLight = true;
   }

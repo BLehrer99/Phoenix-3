@@ -15,7 +15,7 @@ void apogee() {
   }
   message += "leg-fins stowed, ";
 
-  burnHeight = 9.81 * telemetry.agl / (LANDINGFORCE / MASS);
+  burnHeight = telemetry.agl + (pow(((TIMEBURN1 * ((FORCEBURN1 / MASS) + GRAVITY)) + (TIMEBURN2 * ((FORCEBURN2 / MASS) + GRAVITY))), 2) / (2.0 * GRAVITY));
 
   message += "burn height: " + String(burnHeight) + ", ";
   ++phase;

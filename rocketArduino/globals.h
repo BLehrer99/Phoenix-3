@@ -25,8 +25,12 @@ extern Adafruit_BMP280 bme;
 
 #include <Servo.h>
 
-#define MASS 1
-#define LANDINGFORCE 24
+#define MASS 1.0 //kg
+#define FORCEBURN1 36.0 //N
+#define FORCEBURN2 24.0 //N
+#define GRAVITY -9.0 //m/s2
+#define TIMEBURN1 1.6 //s
+#define TIMEBURN2 1.8 //s
 
 #define DELTAT 0.1
 #define COUNTLENGTH 3
@@ -54,13 +58,6 @@ extern Adafruit_BMP280 bme;
 #define ROLLCOMP1TRIM 0
 #define ROLLCOMP2TRIM 0
 #define ROLLCOMP3TRIM 0
-
-#define SERVORANGE 180
-#define MOTORMAX 170
-#define MOTORMIN 65
-#define MOTORRESET 50
-
-#define LANDINGACCEL -20
 
 #define ENGINEDELAY 8600 //ms
 

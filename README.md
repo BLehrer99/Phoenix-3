@@ -12,7 +12,7 @@ T  -0:01: Main engine ignition (0 m)
 T  +0:00: Lift off (0 m)  
 T  +0:03: Main engine cut off (46 m)  
 T  +0:10: Apogee, fairing jettison (310 m)  
-T  +0:16: Landing burn start (123 m)  
+T  +0:16: Landing burn start (100 m)  
 T  +0:18: Landing legs deploy  (3 m)  
 T  +0:19: Landing and shutdown  (0 m)  
 

@@ -26,18 +26,17 @@ extern Adafruit_BMP280 bme;
 #include <Servo.h>
 
 #define MASS 1.0 //kg
-#define FORCEBURN1 36.0 //N
-#define FORCEBURN2 24.0 //N
-#define GRAVITY -9.0 //m/s2
-#define TIMEBURN1 1.6 //s
-#define TIMEBURN2 1.8 //s
+#define FORCEBURN1 (2.0*11.17 + 2.0*4.74) //N
+#define FORCEBURN2 (2.0*11.17) //N
+#define GRAVITYFREE -8.5 //m/s2
+#define GRAVITYBURN -9.0 //m/s2
+#define TIMEBURN1 1.86 //s
+#define TIMEBURN2 (2.44-TIMEBURN1) //s
 
 #define DELTAT 0.1
-#define COUNTLENGTH 3
+#define COUNTLENGTH 3.0
 
 #define BURNTIME 2.4
-
-#define DESCENTRATE -10
 
 #define ABORTPIN 48
 #define FAIRINGPIN 49

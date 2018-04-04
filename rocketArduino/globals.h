@@ -34,7 +34,7 @@ extern Adafruit_BMP280 bme;
 #define TIMEBURN2 (2.44-TIMEBURN1) //s
 
 #define DELTAT 0.1
-#define COUNTLENGTH 3.0
+#define COUNTLENGTH 1.0
 
 #define BURNTIME 2.4
 
@@ -48,10 +48,10 @@ extern Adafruit_BMP280 bme;
 #define ROLLCOMP1PIN 7
 #define ROLLCOMP2PIN 8
 #define ROLLCOMP3PIN 9
-#define LEGS0PIN 10
-#define LEGS1PIN 11
-#define LEGS2PIN 12
-#define LEGS3PIN 13
+#define LEGS0PIN 11
+#define LEGS1PIN 12
+#define LEGS2PIN 13
+#define LEGS3PIN 14
 
 #define ROLLCOMP0TRIM 0
 #define ROLLCOMP1TRIM 0
@@ -66,7 +66,7 @@ extern int phase; //phase of flight
 extern String message; //important message to be written to sd card
 
 extern int countdownStart; //records start time of countdown
-extern int tTime;
+extern long tTime;
 
 extern String input;
 

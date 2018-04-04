@@ -7,7 +7,7 @@ void countdown() {
     return;
   }
   message += "go for launch, ";
-  if (tTime / 1000 >= -1) {
+  if (tTime >= -500) {
     ++phase;
   }
 }

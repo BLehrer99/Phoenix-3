@@ -4,6 +4,7 @@ void setup() {
   Wire.begin();
 
   Serial.begin(9600);
+  Serial1.begin(9600);
 
   pinMode(ABORTPIN, INPUT);
   pinMode(FAIRINGPIN, INPUT);
@@ -24,10 +25,10 @@ void setup() {
 
 long prevMillis;
 void loop() {
-  if (millis() - prevMillis >= 1000 * DELTAT) {
+  if (millis() - prevMillis >= 1000.0 * DELTAT) {
     prevMillis = millis();
     message = "";
-    tTime = phase >= 2 ? (millis() - countdownStart) - (1000 * COUNTLENGTH * 60) : -100000;
+    tTime = phase >= 2 ? (millis() - countdownStart) - (1000.0 * COUNTLENGTH * 60.0) : -100000.0;
     readTelemetry();
     checkCase();
     updateControls();

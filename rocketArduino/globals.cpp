@@ -25,7 +25,7 @@ int countdownStart;
 
 String input = "";
 
-int tTime;
+long tTime;
 
 int burnHeight;
 

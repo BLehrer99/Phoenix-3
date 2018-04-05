@@ -14,7 +14,7 @@ void Telemetry::aglRead() {
 void Telemetry::ascentRateRead() {
   ascentSamplesPerSecond = 1000000.0 / float(micros() - prevAltMicros);
   prevAltMicros = micros();
-  ascentRate = (agl - prevAgl) * ascentSamplesPerSecond;
+  ascentRate = (agl - float(prevAgl)) * float(ascentSamplesPerSecond);
   prevAgl = agl;
 }
 

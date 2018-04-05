@@ -6,7 +6,7 @@ bool startedAsc = false;
 
 void ascent() {
   //guidence**************************
-  if (telemetry.acceleration <= 0 || tTime >= (BURNTIME + 0.1) * 1000 && !meco) {
+  if (telemetry.acceleration <= 0 || tTime >= (BURNTIME + 0.1) * 1000.0 && !meco) {
     meco = true;
     mecoTime = millis();
     message += "MECO, ";

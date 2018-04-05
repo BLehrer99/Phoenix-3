@@ -5,6 +5,8 @@ void shutoff() {
 
   writeSD();
 
+  myFile.close();
+
   ++phase;
 }
 

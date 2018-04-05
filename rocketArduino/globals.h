@@ -34,7 +34,7 @@ extern Adafruit_BMP280 bme;
 #define TIMEBURN2 (2.44-TIMEBURN1) //s
 
 #define DELTAT 0.1
-#define COUNTLENGTH 1.0
+#define COUNTLENGTH 3.0
 
 #define BURNTIME 2.4
 

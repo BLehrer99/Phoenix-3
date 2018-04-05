@@ -48,6 +48,7 @@ extern Adafruit_BMP280 bme;
 #define ROLLCOMP1PIN 7
 #define ROLLCOMP2PIN 8
 #define ROLLCOMP3PIN 9
+#define AFTSPIN 10
 #define LEGS0PIN 11
 #define LEGS1PIN 12
 #define LEGS2PIN 13
@@ -57,6 +58,9 @@ extern Adafruit_BMP280 bme;
 #define ROLLCOMP1TRIM 0
 #define ROLLCOMP2TRIM 0
 #define ROLLCOMP3TRIM 0
+
+#define AFTSON 100
+#define AFTSOFF 30
 
 #define ENGINEDELAY 8600 //ms
 
@@ -108,9 +112,11 @@ class Servos {
     void setLegFin();
     void lightMain();
     void lightLand();
+    void fireAFTS();
 
     bool mainLight = false;
     bool landLight = true;
+    bool triggerAFTS = false;
 
     int rollComp;
     int launchPitch;
@@ -135,11 +141,13 @@ void landing();
 void shutoff();
 void resetServos();
 void serialInput();
+void checkAFTS();
 
 extern const int LegsLand[4];
 extern const int LegsStow[4];
 extern const int LegsAsc[4];
 
+extern Servo AFTS;
 extern Servo RollComp0;
 extern Servo RollComp1;
 extern Servo RollComp2;

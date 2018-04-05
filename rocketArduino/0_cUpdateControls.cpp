@@ -5,4 +5,5 @@ void updateControls() {
   servos.setLegFin();
   servos.lightMain();
   servos.lightLand();
+  servos.fireAFTS();
 }

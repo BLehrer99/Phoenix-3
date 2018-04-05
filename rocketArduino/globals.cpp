@@ -19,7 +19,6 @@ int phase = 0;
    9: powered off
 */
 
-
 String message; //stores important info to write to sd card
 int countdownStart;
 
@@ -38,6 +37,7 @@ Servos servos;
 
 File myFile;
 
+Servo AFTS;
 Servo RollComp0;
 Servo RollComp1;
 Servo RollComp2;

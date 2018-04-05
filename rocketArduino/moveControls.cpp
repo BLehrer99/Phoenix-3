@@ -1,15 +1,15 @@
 #include "globals.h"
 
-void Servos::lightMain(){
-  if(mainLight){
+void Servos::lightMain() {
+  if (mainLight) {
     digitalWrite(MAINIGNITIONPIN, HIGH);
   } else {
     digitalWrite(MAINIGNITIONPIN, LOW);
   }
 }
 
-void Servos::lightLand(){
-    if(landLight){
+void Servos::lightLand() {
+  if (landLight) {
     digitalWrite(LANDIGNITIONPIN, HIGH);
   } else {
     digitalWrite(LANDIGNITIONPIN, LOW);
@@ -29,3 +29,8 @@ void Servos::setLegFin() {
   LegFin2.write(legs[2]);
   LegFin3.write(legs[3]);
 }
+
+void Servos::fireAFTS() {
+  triggerAFTS ? AFTS.write(AFTSON) : AFTS.write(AFTSOFF);
+}
+

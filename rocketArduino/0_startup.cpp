@@ -73,13 +73,13 @@ void displayCalStatus(void)
 }
 
 int setupAHRS() {
-  Serial.println("Orientation Sensor Test");
-  message += "Orientation Sensor Test, ";
+  Serial.println("Vehicle is in self-align");
+  message += "Vehicle is in self-align, ";
   /* Initialise the sensor */
   if (!bno.begin()) {
     /* There was a problem detecting the BNO055 ... check your connections */
-    Serial.println("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
-    message += "Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!, ";
+    Serial.println("No BNO055 detected");
+    message += "No BNO055 detected, ";
     phase = 9;
     return 0;
   }

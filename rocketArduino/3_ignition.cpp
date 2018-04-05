@@ -5,6 +5,7 @@ void ignition() {
   message += "ignition, ";
   if (telemetry.agl >= 1) {
     message += "liftoff, ";
+    message += "AFTS is armed for flight, ";
     ++phase;
   }
 }

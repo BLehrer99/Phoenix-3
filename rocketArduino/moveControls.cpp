@@ -34,3 +34,7 @@ void Servos::fireAFTS() {
   triggerAFTS ? AFTS.write(AFTSON) : AFTS.write(AFTSOFF);
 }
 
+void Servos::fairing() {
+  fairingAttach ? Fairing.write(FAIRINGON) : Fairing.write(FAIRINGOFF);
+}
+

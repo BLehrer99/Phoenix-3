@@ -39,11 +39,11 @@ extern Adafruit_BMP280 bme;
 #define BURNTIME 2.4
 
 #define ABORTPIN 48
-#define FAIRINGPIN 49
 #define MAINIGNITIONPIN 50
 #define LANDIGNITIONPIN 51
 
 //skip 4, sd
+#define FAIRINGPIN 5
 #define ROLLCOMP0PIN 6
 #define ROLLCOMP1PIN 7
 #define ROLLCOMP2PIN 8
@@ -62,7 +62,10 @@ extern Adafruit_BMP280 bme;
 #define AFTSON 100
 #define AFTSOFF 30
 
-#define ENGINEDELAY 8600 //ms
+#define FAIRINGON 100
+#define FAIRINGOFF 30
+
+#define ENGINEDELAY 6200 //ms
 
 extern File myFile;
 
@@ -113,10 +116,12 @@ class Servos {
     void lightMain();
     void lightLand();
     void fireAFTS();
+    void fairing();
 
     bool mainLight = false;
     bool landLight = true;
     bool triggerAFTS = false;
+    bool fairingAttach = true;
 
     int rollComp;
     int launchPitch;
@@ -148,6 +153,7 @@ extern const int LegsStow[4];
 extern const int LegsAsc[4];
 
 extern Servo AFTS;
+extern Servo Fairing;
 extern Servo RollComp0;
 extern Servo RollComp1;
 extern Servo RollComp2;

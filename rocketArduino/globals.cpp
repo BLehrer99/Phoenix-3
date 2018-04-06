@@ -37,6 +37,7 @@ Servos servos;
 
 File myFile;
 
+Servo Fairing;
 Servo AFTS;
 Servo RollComp0;
 Servo RollComp1;

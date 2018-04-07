@@ -39,7 +39,7 @@ int height(float agl) {
 
 void apogee() {
   delay(500);
-  servos.fairingAttach = false;
+  servos.fairingLight = true;
   for (int i = 0; i < 4; ++i) {
     servos.legs[i] = LegsStow[i];
   }

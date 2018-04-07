@@ -7,7 +7,7 @@ void setup() {
   Serial1.begin(9600);
 
   pinMode(ABORTPIN, INPUT);
-  pinMode(FAIRINGPIN, INPUT);
+  pinMode(FAIRINGPIN, OUTPUT);
   pinMode(MAINIGNITIONPIN, OUTPUT);
   pinMode(LANDIGNITIONPIN, OUTPUT);
 
@@ -20,7 +20,6 @@ void setup() {
   LegFin2.attach(LEGS2PIN);
   LegFin3.attach(LEGS3PIN);
   AFTS.attach(AFTSPIN);
-  Fairing.attach(FAIRINGPIN);
   delay(2000);
   startup();
 }

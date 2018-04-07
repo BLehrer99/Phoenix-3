@@ -6,5 +6,5 @@ void updateControls() {
   servos.lightMain();
   servos.lightLand();
   servos.fireAFTS();
-  servos.fairing();
+  servos.lightFairing();
 }

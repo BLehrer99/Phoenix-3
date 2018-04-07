@@ -62,9 +62,6 @@ extern Adafruit_BMP280 bme;
 #define AFTSON 100
 #define AFTSOFF 30
 
-#define FAIRINGON 100
-#define FAIRINGOFF 30
-
 #define ENGINEDELAY 6200 //ms
 
 extern File myFile;
@@ -116,17 +113,19 @@ class Servos {
     void lightMain();
     void lightLand();
     void fireAFTS();
-    void fairing();
+    void lightFairing();
 
     bool mainLight = false;
     bool landLight = true;
     bool triggerAFTS = false;
-    bool fairingAttach = true;
+    bool fairingLight = false;
 
     int rollComp;
     int launchPitch;
     int legs[4];
     int fins[4];
+
+    long lightTime = 0;
 };
 
 extern Servos servos;
@@ -153,7 +152,6 @@ extern const int LegsStow[4];
 extern const int LegsAsc[4];
 
 extern Servo AFTS;
-extern Servo Fairing;
 extern Servo RollComp0;
 extern Servo RollComp1;
 extern Servo RollComp2;

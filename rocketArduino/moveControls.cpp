@@ -2,6 +2,12 @@
 
 void Servos::lightMain() {
   if (mainLight) {
+    if (lightTime == 0) {
+      lightTime = millis();
+    } else if (millis() - lightTime >= 1000) {
+      lightTime = 0;
+      mainLight = false;
+    }
     digitalWrite(MAINIGNITIONPIN, HIGH);
   } else {
     digitalWrite(MAINIGNITIONPIN, LOW);
@@ -10,6 +16,12 @@ void Servos::lightMain() {
 
 void Servos::lightLand() {
   if (landLight) {
+    if (lightTime == 0) {
+      lightTime = millis();
+    } else if (millis() - lightTime >= 1000) {
+      lightTime = 0;
+      landLight = false;
+    }
     digitalWrite(LANDIGNITIONPIN, HIGH);
   } else {
     digitalWrite(LANDIGNITIONPIN, LOW);
@@ -34,7 +46,17 @@ void Servos::fireAFTS() {
   triggerAFTS ? AFTS.write(AFTSON) : AFTS.write(AFTSOFF);
 }
 
-void Servos::fairing() {
-  fairingAttach ? Fairing.write(FAIRINGON) : Fairing.write(FAIRINGOFF);
+void Servos::lightFairing() {
+  if (fairingLight) {
+    if (lightTime == 0) {
+      lightTime = millis();
+    } else if (millis() - lightTime >= 1000) {
+      lightTime = 0;
+      fairingLight = false;
+    }
+    digitalWrite(FAIRINGPIN, HIGH);
+  } else {
+    digitalWrite(FAIRINGPIN, LOW);
+  }
 }
 

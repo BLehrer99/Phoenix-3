@@ -3,6 +3,7 @@
 void resetServos() {
   servos.landLight = false;
   servos.mainLight = false;
+  servos.fairingLight = false;
   servos.rollComp = 80;
   if (phase < 7) {
     for (int i = 0; i < 4; ++i) {

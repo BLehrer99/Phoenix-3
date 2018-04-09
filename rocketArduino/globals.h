@@ -95,6 +95,10 @@ class Telemetry {
     float rollRate;
     float acceleration;
 
+    int targetRoll = 0;
+    int targetYaw = 0;
+    int targetPitch = 0;
+
     double qfe;
     double temp;
 

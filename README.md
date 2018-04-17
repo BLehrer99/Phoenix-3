@@ -10,11 +10,11 @@ T  -3:08: Flight control testing (0 m)
 T  -3:00: 3 minute wait period for evacuation (0 m)  
 T  -0:01: Main engine ignition (0 m)   
 T  +0:00: Lift off (0 m)  
-T  +0:03: Main engine cut off (46 m)  
-T  +0:10: Apogee, fairing jettison (310 m)  
-T  +0:16: Landing burn start (100 m)  
-T  +0:18: Landing legs deploy  (3 m)  
-T  +0:19: Landing and shutdown  (0 m)  
+T  +0:02: Main engine cut off (70 m)  
+T  +0:08: Apogee, fairing jettison (235 m)  
+T  +0:15: Landing burn start (71 m)  
+T  +0:16: Landing legs deploy  (5 m)  
+T  +0:17: Landing and shutdown  (0 m)  
 
 The ascent will be achieved with three Estes class 'E' solid rocket engines and will have full aerodynamic control over all 3 axis of flight to maintain a proper trajectory to apogee. All flight computer and software will run on an Arduino Due and will be programed using Arduino C. Apogee will be at approximately 350 meters and likely directly above the range. At this point, the ascent fins will stow and wait to be re-deployed as landing legs. The trajectory will be maintained using a further set of guidance fins. There will also be a set of fins that are meant to counter the rotational moment of the aircraft. At the proper altitude, a suicide burn will be initiated to retard the descent rate. When near the ground, Phoenix 3 will decelerate to a near stop and deploy its landing legs for a soft landing. Telemetry will consist of a compass, a barometer, an accelerometer, and a gyroscope.
 
@@ -22,6 +22,9 @@ I have already selected all the necessary parts and have started to write the gu
 
 For my progress and further plans including blueprints and a parts list, see:  
 -   <https://github.com/BLehrer99/Phoenix-3>
+
+For my project presentation, see:  
+-   <https://docs.google.com/presentation/d/1p-ATzmkWufKUYM8nvtC3Z1siQSsN0eqa0jgezo0xnYU/edit?usp=sharing>  
 
 For reference, see:  
 -   Allain, Rhett. "The Physics of SpaceX's Wicked Double Booster Landing." Wired. February 08, 2018. Accessed March 13, 2018. <https://www.wired.com/story/the-physics-of-spacex-falcon-heavy-wicked-double-booster-landing/>  

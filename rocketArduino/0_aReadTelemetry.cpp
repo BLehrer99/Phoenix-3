@@ -3,12 +3,13 @@
 void readTelemetry() {
   telemetry.aglRead();
   float prevAscentRate = telemetry.ascentRate;
+  telemetry.ascentRateRead();
   telemetry.accelerationRead(prevAscentRate);
   telemetry.ahrsRead();
 }
 
 void Telemetry::aglRead() {
-  telemetry.agl = bme.readAltitude(telemetry.qfe);
+  agl = bme.readAltitude(telemetry.qfe);
 }
 
 void Telemetry::ascentRateRead() {

@@ -18,7 +18,6 @@ void setup() {
   LegFin2.attach(LEGS2PIN);
   LegFin3.attach(LEGS3PIN);
   AFTS.attach(AFTSPIN);
-  delay(2000);
   startup();
 }
 

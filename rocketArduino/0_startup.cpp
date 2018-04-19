@@ -136,6 +136,9 @@ void startup() {
     phase = 9;
     return;
   }
+  updateControls();
+
+  delay(30000);
 
   if (!setupAHRS())
     return;

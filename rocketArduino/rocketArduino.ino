@@ -13,8 +13,6 @@ void setup() {
 
   RollComp0.attach(ROLLCOMP0PIN);
   RollComp1.attach(ROLLCOMP1PIN);
-  RollComp2.attach(ROLLCOMP2PIN);
-  RollComp3.attach(ROLLCOMP3PIN);
   LegFin0.attach(LEGS0PIN);
   LegFin1.attach(LEGS1PIN);
   LegFin2.attach(LEGS2PIN);

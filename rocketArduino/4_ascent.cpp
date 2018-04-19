@@ -1,11 +1,15 @@
 #include "globals.h"
 
 bool meco = false;
-int mecoTime;
-bool startedAsc = false;
+long mecoTime;
+
+void ascGuide() {
+
+}
 
 void ascent() {
-  //guidence**************************
+  ascGuide();
+  servos.mainLight = false;
   if (telemetry.acceleration <= 0 || tTime >= (BURNTIME + 0.1) * 1000.0 && !meco) {
     meco = true;
     mecoTime = millis();
@@ -21,4 +25,3 @@ void ascent() {
     message += "burn, ";
   }
 }
-

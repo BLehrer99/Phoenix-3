@@ -1,7 +1,5 @@
 #include "globals.h"
 
-bool fairingSep = false;
-
 int height(float agl) {
   double height = 1.0 / (8.0 * GRAVITYFREE);
 
@@ -38,8 +36,8 @@ int height(float agl) {
 */
 
 void apogee() {
-  delay(500);
   servos.fairingLight = true;
+  delay(500);
   for (int i = 0; i < 4; ++i) {
     servos.legs[i] = LegsStow[i];
   }

@@ -20,7 +20,7 @@ int phase = 0;
 */
 
 String message; //stores important info to write to sd card
-int countdownStart;
+long countdownStart;
 
 String input = "";
 
@@ -40,8 +40,6 @@ File myFile;
 Servo AFTS;
 Servo RollComp0;
 Servo RollComp1;
-Servo RollComp2;
-Servo RollComp3;
 Servo LegFin0;
 Servo LegFin1;
 Servo LegFin2;

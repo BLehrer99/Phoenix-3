@@ -2,37 +2,23 @@
 
 void Servos::lightMain() {
   if (mainLight) {
-    if (lightTime == 0) {
-      lightTime = millis();
-    } else if (millis() - lightTime >= 1000) {
-      lightTime = 0;
-      mainLight = false;
-    }
-    digitalWrite(MAINIGNITIONPIN, HIGH);
-  } else {
     digitalWrite(MAINIGNITIONPIN, LOW);
+  } else {
+    digitalWrite(MAINIGNITIONPIN, HIGH);
   }
 }
 
 void Servos::lightLand() {
   if (landLight) {
-    if (lightTime == 0) {
-      lightTime = millis();
-    } else if (millis() - lightTime >= 1000) {
-      lightTime = 0;
-      landLight = false;
-    }
-    digitalWrite(LANDIGNITIONPIN, HIGH);
-  } else {
     digitalWrite(LANDIGNITIONPIN, LOW);
+  } else {
+    digitalWrite(LANDIGNITIONPIN, HIGH);
   }
 }
 
 void Servos::setRollComp() {
   RollComp0.write(rollComp + fins[0] + ROLLCOMP0TRIM);
   RollComp1.write(rollComp + fins[1] + ROLLCOMP1TRIM);
-  RollComp2.write(rollComp + fins[2] + ROLLCOMP2TRIM);
-  RollComp3.write(rollComp + fins[3] + ROLLCOMP3TRIM);
 }
 
 void Servos::setLegFin() {
@@ -48,15 +34,9 @@ void Servos::fireAFTS() {
 
 void Servos::lightFairing() {
   if (fairingLight) {
-    if (lightTime == 0) {
-      lightTime = millis();
-    } else if (millis() - lightTime >= 1000) {
-      lightTime = 0;
-      fairingLight = false;
-    }
-    digitalWrite(FAIRINGPIN, HIGH);
-  } else {
     digitalWrite(FAIRINGPIN, LOW);
+  } else {
+    digitalWrite(FAIRINGPIN, HIGH);
   }
 }
 

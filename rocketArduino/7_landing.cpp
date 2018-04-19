@@ -1,7 +1,7 @@
 #include "globals.h"
 
 bool landingStarted = false;
-int landingStartTime;
+long landingStartTime;
 
 void landing() {
   message += "landing, ";

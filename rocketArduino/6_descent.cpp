@@ -17,13 +17,19 @@ double burnoutAlt(float agl, float rate) {
    p\left(x\right)=x-t_1\sqrt{2g_0\left(x-A\right)}+\frac{t_1^2\left(\frac{f_1}{m}+g_1\right)}{2}-t_2\sqrt{2g_0\left(x-A\right)}+\frac{t_1t_2\left(\frac{f_1}{m}+g_1\right)}{2}+\frac{t_2^2\left(\frac{f_2}{m}+g_1\right)}{2}
 */
 
+void decGuide() {
+
+}
+
 void descent() {
-  //guidance
+  decGuide();
   if (telemetry.agl <= burnHeight + 10 || burnoutAlt(telemetry.agl, telemetry.ascentRate) <= 10) {
+    servos.fairingLight = false;
     message += "landing burn, ";
     servos.landLight = true;
   }
   if (telemetry.agl <= 10) {
+    servos.landLight = false;
     message += "landing, ";
     ++phase;
   }

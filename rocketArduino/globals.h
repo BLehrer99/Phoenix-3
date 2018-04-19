@@ -39,11 +39,11 @@ extern Adafruit_BMP280 bme;
 #define BURNTIME 2.4
 
 #define ABORTPIN 48
+#define FAIRINGPIN 49
 #define MAINIGNITIONPIN 50
 #define LANDIGNITIONPIN 51
 
 //skip 4, sd
-#define FAIRINGPIN 5
 #define ROLLCOMP0PIN 6
 #define ROLLCOMP1PIN 7
 #define ROLLCOMP2PIN 8
@@ -69,7 +69,7 @@ extern File myFile;
 extern int phase; //phase of flight
 extern String message; //important message to be written to sd card
 
-extern int countdownStart; //records start time of countdown
+extern long countdownStart; //records start time of countdown
 extern long tTime;
 
 extern String input;
@@ -127,9 +127,7 @@ class Servos {
     int rollComp;
     int launchPitch;
     int legs[4];
-    int fins[4];
-
-    long lightTime = 0;
+    int fins[2];
 };
 
 extern Servos servos;
@@ -158,8 +156,6 @@ extern const int LegsAsc[4];
 extern Servo AFTS;
 extern Servo RollComp0;
 extern Servo RollComp1;
-extern Servo RollComp2;
-extern Servo RollComp3;
 extern Servo LegFin0;
 extern Servo LegFin1;
 extern Servo LegFin2;

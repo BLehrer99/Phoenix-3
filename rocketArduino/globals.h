@@ -25,7 +25,7 @@ extern Adafruit_BMP280 bme;
 
 #include <Servo.h>
 
-#define MASS 1.0 //kg
+#define MASS 1.5 //kg
 #define FORCEBURN1 (2.0*11.17 + 2.0*4.74) //N
 #define FORCEBURN2 (2.0*11.17) //N
 #define GRAVITYFREE -8.5 //m/s2
@@ -46,18 +46,14 @@ extern Adafruit_BMP280 bme;
 //skip 4, sd
 #define ROLLCOMP0PIN 6
 #define ROLLCOMP1PIN 7
-#define ROLLCOMP2PIN 8
-#define ROLLCOMP3PIN 9
-#define AFTSPIN 10
-#define LEGS0PIN 11
-#define LEGS1PIN 12
-#define LEGS2PIN 13
-#define LEGS3PIN 14
+#define AFTSPIN 8
+#define LEGS0PIN 9
+#define LEGS1PIN 11
+#define LEGS2PIN 12
+#define LEGS3PIN 13
 
-#define ROLLCOMP0TRIM 0
-#define ROLLCOMP1TRIM 0
-#define ROLLCOMP2TRIM 0
-#define ROLLCOMP3TRIM 0
+#define ROLLCOMP0TRIM 90
+#define ROLLCOMP1TRIM 90
 
 #define AFTSON 100
 #define AFTSOFF 30

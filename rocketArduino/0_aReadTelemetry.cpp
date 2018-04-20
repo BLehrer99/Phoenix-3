@@ -9,7 +9,7 @@ void readTelemetry() {
 }
 
 void Telemetry::aglRead() {
-  agl = bme.readAltitude(telemetry.qfe);
+  agl = bme.readAltitude(qfe);
 }
 
 void Telemetry::ascentRateRead() {
@@ -29,7 +29,32 @@ void Telemetry::ahrsRead() {
   bno.getEvent(&event);
 
   /* save the floating point data */
-  telemetry.pitch = event.orientation.x;
-  telemetry.yaw = event.orientation.x;
-  telemetry.roll = event.orientation.x;
+  prevPitch = pitch;
+  prevYaw = yaw;
+  prevRoll = roll;
+
+  pitch = event.orientation.x;
+  yaw = event.orientation.x;
+  roll = event.orientation.x;
+
+  int rate = (int(pitch) - int(prevPitch)) % 360;
+  if (rate >= 180 || rate <= -180) {
+    pitchRate = rate * ascentSamplesPerSecond;
+  } else {
+    pitchRate = (int(pitch) - int(prevPitch)) * ascentSamplesPerSecond;
+  }
+
+  rate = (int(yaw) - int(prevYaw)) % 360;
+  if (rate >= 180 || rate <= -180) {
+    yawRate = rate * ascentSamplesPerSecond;
+  } else {
+    yawRate = (int(yaw) - int(prevYaw)) * ascentSamplesPerSecond;
+  }
+
+  rate = (int(roll) - int(prevRoll)) % 360;
+  if (rate >= 180 || rate <= -180) {
+    rollRate = rate * ascentSamplesPerSecond;
+  } else {
+    rollRate = (int(roll) - int(prevRoll)) * ascentSamplesPerSecond;
+  }
 }

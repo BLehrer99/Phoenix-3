@@ -90,9 +90,12 @@ class Telemetry {
     float pitch;
     float yaw;
     float roll;
-    float pitchRate;
-    float yawRate;
-    float rollRate;
+    float prevPitch;
+    float prevYaw;
+    float prevRoll;
+    int pitchRate;
+    int yawRate;
+    int rollRate;
     float acceleration;
 
     int targetRoll = 0;

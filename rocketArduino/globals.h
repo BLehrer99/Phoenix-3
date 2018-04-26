@@ -3,21 +3,21 @@
 
 #include "Arduino.h"
 
-#include <Wire.h>
-#include <Adafruit_Sensor.h>
-#include <Adafruit_BNO055.h>
-#include <utility/imumaths.h>
-
-extern Adafruit_BNO055 bno;
-
-#include <Adafruit_BMP280.h>
-
-#define BMP_SCK 13
-#define BMP_MISO 12
-#define BMP_MOSI 11
-#define BMP_CS 10
-
-extern Adafruit_BMP280 bme;
+//#include <Wire.h>
+//#include <Adafruit_Sensor.h>
+//#include <Adafruit_BNO055.h>
+//#include <utility/imumaths.h>
+//
+//extern Adafruit_BNO055 bno;
+//
+//#include <Adafruit_BMP280.h>
+//
+//#define BMP_SCK 13
+//#define BMP_MISO 12
+//#define BMP_MOSI 11
+//#define BMP_CS 10
+//
+//extern Adafruit_BMP280 bme;
 
 #include <SPI.h>
 
@@ -44,8 +44,8 @@ extern Adafruit_BMP280 bme;
 #define LANDIGNITIONPIN 51
 
 //skip 4, sd
-#define ROLLCOMP0PIN 6
-#define ROLLCOMP1PIN 7
+//#define ROLLCOMP0PIN 6
+//#define ROLLCOMP1PIN 7
 #define AFTSPIN 8
 #define LEGS0PIN 9
 #define LEGS1PIN 11
@@ -98,8 +98,8 @@ class Telemetry {
     int targetYaw = 0;
     int targetPitch = 0;
 
-    double qfe;
-    double temp;
+    //double qfe;
+    //double temp;
 
   private:
     unsigned long prevAltMicros = 0;
@@ -153,8 +153,8 @@ extern const int LegsStow[4];
 extern const int LegsAsc[4];
 
 extern Servo AFTS;
-extern Servo RollComp0;
-extern Servo RollComp1;
+//extern Servo RollComp0;
+//extern Servo RollComp1;
 extern Servo LegFin0;
 extern Servo LegFin1;
 extern Servo LegFin2;

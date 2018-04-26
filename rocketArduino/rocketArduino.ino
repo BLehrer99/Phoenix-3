@@ -1,23 +1,26 @@
 #include "globals.h"
 
 void setup() {
-  Wire.begin();
+  //Wire.begin();
 
   Serial.begin(9600);
-  Serial1.begin(9600);
+  Serial1.begin(38400);
 
   pinMode(ABORTPIN, INPUT);
   pinMode(FAIRINGPIN, OUTPUT);
   pinMode(MAINIGNITIONPIN, OUTPUT);
   pinMode(LANDIGNITIONPIN, OUTPUT);
 
-  RollComp0.attach(ROLLCOMP0PIN);
-  RollComp1.attach(ROLLCOMP1PIN);
+//  RollComp0.attach(ROLLCOMP0PIN);
+//  RollComp1.attach(ROLLCOMP1PIN);
   LegFin0.attach(LEGS0PIN);
   LegFin1.attach(LEGS1PIN);
   LegFin2.attach(LEGS2PIN);
   LegFin3.attach(LEGS3PIN);
   AFTS.attach(AFTSPIN);
+
+  while(!Serial1);
+  
   startup();
 }
 

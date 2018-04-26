@@ -1,8 +1,8 @@
 #include "globals.h"
 
-Adafruit_BNO055 bno = Adafruit_BNO055(55);
-
-Adafruit_BMP280 bme;
+//Adafruit_BNO055 bno = Adafruit_BNO055(55);
+//
+//Adafruit_BMP280 bme;
 
 int phase = 0;
 /*
@@ -28,9 +28,9 @@ long tTime;
 
 int burnHeight;
 
-const int LegsLand[4] = {40, 10, 90, 85};
-const int LegsStow[4] = {105, 65, 35, 150};
-const int LegsAsc[4] = {95, 60, 45, 140};
+const int LegsLand[4] = {40, 10, 90, 65};
+const int LegsStow[4] = {105, 65, 35, 115};
+const int LegsAsc[4] = {95, 60, 45, 110};
 
 Telemetry telemetry;
 Servos servos;
@@ -38,8 +38,6 @@ Servos servos;
 File myFile;
 
 Servo AFTS;
-Servo RollComp0;
-Servo RollComp1;
 Servo LegFin0;
 Servo LegFin1;
 Servo LegFin2;

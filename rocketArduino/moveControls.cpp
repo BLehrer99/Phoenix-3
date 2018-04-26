@@ -17,8 +17,10 @@ void Servos::lightLand() {
 }
 
 void Servos::setRollComp() {
-  RollComp0.write(rollComp + fins[0] + ROLLCOMP0TRIM);
-  RollComp1.write(rollComp + fins[1] + ROLLCOMP1TRIM);
+  unsigned char zero = rollComp + fins[0] + ROLLCOMP0TRIM;
+  unsigned char one = rollComp + fins[1] + ROLLCOMP1TRIM + 128;
+  Serial1.write(zero);
+  Serial1.write(one);
 }
 
 void Servos::setLegFin() {

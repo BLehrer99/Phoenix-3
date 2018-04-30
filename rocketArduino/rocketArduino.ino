@@ -6,8 +6,6 @@ void setup() {
   Serial.begin(9600);
   Serial1.begin(38400);
 
-  //this is a comet
-
   pinMode(ABORTPIN, INPUT);
   pinMode(FAIRINGPIN, OUTPUT);
   pinMode(MAINIGNITIONPIN, OUTPUT);

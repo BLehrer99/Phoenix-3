@@ -20,7 +20,7 @@ void setup() {
   AFTS.attach(AFTSPIN);
 
   while(!Serial1);
-  
+
   startup();
 }
 
@@ -39,4 +39,3 @@ void loop() {
     writeSD();
   }
 }
-
